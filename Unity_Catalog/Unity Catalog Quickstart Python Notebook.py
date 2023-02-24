@@ -158,6 +158,11 @@ display(spark.table("quickstart_table"))
 # COMMAND ----------
 
 # Show all of the available tables in the schema.
+display(spark.sql("DESCRIBE catalog quickstart_catalog"))
+
+# COMMAND ----------
+
+# Show all of the available tables in the schema.
 display(spark.sql("SHOW TABLES in quickstart_schema"))
 
 # COMMAND ----------
@@ -201,3 +206,7 @@ display(spark.sql("SHOW TABLES in quickstart_schema"))
 
 # Show the table's data.
 display(spark.table("quickstart_table_ps"))
+
+# COMMAND ----------
+
+
